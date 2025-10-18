@@ -8,7 +8,8 @@ const router = express.Router();
 router.get('/me', async (req, res) => {
     try {
         // random cat fact API
-        const response = await axios.get('https://catfact.ninja/fact');
+        const response = await axios.get('https://catfact.ninja/fact',
+            {timeout: 5000});
         const catFact = response.data.fact;
 
         // Respond with user info and cat fact
@@ -20,7 +21,7 @@ router.get('/me', async (req, res) => {
                 stack: [ "NodeJS", "ExpressJS", "Django"],
             },
             timestamp: new Date().toISOString(),
-            catFact: catFact
+            fact: catFact
         };
         res.status(200).json(userData);
     }
