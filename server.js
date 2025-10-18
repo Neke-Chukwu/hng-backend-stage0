@@ -4,7 +4,6 @@ import cors from 'cors';
 import meRoute from './routes/get-me-endpoint.js';
 
 dotenv.config();
-
 const app = express();
 
 app.use(cors());

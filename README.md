@@ -4,8 +4,17 @@
 This simple RESTful API returns my profile information along with a dynamic cat fact from [catfact.ninja](https://catfact.ninja/fact).
 
 ---
+## setup instructions
+To download packages run "pnpm install"
+
+
+To initailize project run "pnpm run dev"
+
+the server url will appear on the terminal or you can just copy and visit the one below
+
+
 ## Server Url
-http://localhost:3000/me
+http://localhost:3000/me 
 
 ## Endpoint
 *GET* /me
