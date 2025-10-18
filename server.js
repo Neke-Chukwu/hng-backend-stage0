@@ -18,7 +18,7 @@ const blue = '\x1b[34m';
 
 // Start the server
 const PORT = process.env.port || 3000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
     console.log(blue,`http://localhost:${PORT}/me`, reset);
 });
